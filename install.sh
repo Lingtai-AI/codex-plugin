@@ -5,11 +5,7 @@
 #   - skills/lingtai/  → ~/.codex/skills/lingtai/
 #   - SessionStart hook → merged into ~/.codex/hooks.json
 #
-# Codex hooks are gated behind a feature flag. After installing, ensure
-# ~/.codex/config.toml contains:
-#
-#   [features]
-#   codex_hooks = true
+# Hooks are enabled by default in Codex CLI 0.129.0+. No feature flag needed.
 #
 # Usage:
 #   ./install.sh                  # install
@@ -54,9 +50,5 @@ else
 fi
 
 echo
-echo "Done. To enable hooks, ensure $CODEX_HOME/config.toml contains:"
-echo
-echo "  [features]"
-echo "  codex_hooks = true"
-echo
-echo "Then start a Codex CLI session in a directory with .lingtai/ to verify."
+echo "Done. Hooks are enabled by default in Codex CLI 0.129.0+."
+echo "Start a Codex CLI session in a directory with .lingtai/ to verify."
