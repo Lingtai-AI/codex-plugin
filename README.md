@@ -19,12 +19,7 @@ This places:
 - `skills/lingtai/` → `~/.codex/skills/lingtai/`
 - A `SessionStart` hook → `~/.codex/hooks.json` (created if absent; merge required if you already have one)
 
-Codex CLI gates hooks behind a feature flag. Add this to `~/.codex/config.toml`:
-
-```toml
-[features]
-codex_hooks = true
-```
+Hooks are enabled by default in Codex CLI 0.129.0+ — no feature flag needed.
 
 To uninstall the skill:
 
@@ -48,7 +43,7 @@ To uninstall the skill:
 
 ## Usage
 
-Once installed and the feature flag is enabled, Codex auto-detects LingTai projects on session start. Ask it to:
+Once installed, Codex auto-detects LingTai projects on session start. Ask it to:
 
 - *"Check my inbox"*
 - *"Send a message to the orchestrator: research X"*
@@ -81,7 +76,7 @@ The plugin doesn't bundle these — they're maintained in the [main LingTai repo
 ## Requirements
 
 - A running LingTai project (`.lingtai/` directory with agents)
-- Codex CLI with the `codex_hooks` feature flag enabled
+- Codex CLI 0.129.0+ (hooks enabled by default)
 - Python 3 (for UUID generation and liveness checks)
 - SSH keys configured for remote networks (`ssh-copy-id user@host`)
 - `lingtai-tui` installed (populates `~/.lingtai-tui/bundled-skills/` with the reference skills above)
