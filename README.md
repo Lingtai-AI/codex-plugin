@@ -78,4 +78,4 @@ The plugin doesn't bundle these — they're maintained in the [main LingTai repo
 
 ## License
 
-MIT
+Apache-2.0
