@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-# Install the LingTai integration into Codex CLI.
+# Install the LingTai integration into Codex CLI without the plugin system.
+#
+# Prefer the native plugin when your Codex has `codex plugin`:
+#   codex plugin marketplace add Lingtai-AI/codex-plugin
+#   codex plugin add lingtai@lingtai
 #
 # This places:
 #   - skills/lingtai/  → ~/.codex/skills/lingtai/

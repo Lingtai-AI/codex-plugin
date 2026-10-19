@@ -1,0 +1,24 @@
+{
+  "name": "lingtai",
+  "version": "0.5.0",
+  "description": "Connect Codex to LingTai agent networks through the shared human mailbox.",
+  "author": {
+    "name": "Zesen Huang",
+    "url": "https://github.com/huangzesen"
+  },
+  "homepage": "https://lingtai.ai",
+  "repository": "https://github.com/Lingtai-AI/codex-plugin",
+  "license": "Apache-2.0",
+  "keywords": ["agents", "mailbox", "lingtai", "multi-agent"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "LingTai",
+    "shortDescription": "Mail and manage your LingTai agents",
+    "longDescription": "Read and send mail as the human of a LingTai agent network, check which agents are alive, and sleep, suspend, refresh or restart them. The skill reads the protocol the network writes about itself (.lingtai/human/README.md and each agent's SKILL.md).",
+    "developerName": "LingTai",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Write"],
+    "websiteURL": "https://lingtai.ai",
+    "defaultPrompt": ["Check my LingTai inbox"]
+  }
+}
